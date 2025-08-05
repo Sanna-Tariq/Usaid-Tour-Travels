@@ -26,3 +26,32 @@ const HeaderSlider = () => {
 };
 
 export default HeaderSlider;
+
+import React, { useState, useEffect } from 'react';
+import slide1 from '../assets/images/index/header-slider1.webp';
+import slide2 from '../assets/images/index/header-slider2.webp';
+import slide3 from '../assets/images/index/header-slider3.webp';
+
+const HeaderSlider = () => {
+  const slides = [slide1, slide2, slide3];
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="header-slider">
+      {slides.map((slide, index) => (
+        <div className={`slide ${index === current ? 'active' : ''}`} key={index}>
+          <img src={slide} alt={`slider-img-${index}`} />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default HeaderSlider;
