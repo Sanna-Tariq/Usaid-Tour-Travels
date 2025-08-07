@@ -56,7 +56,6 @@ const Home = () => {
 
 
       <Header />
-      {/* Your other content */}
       <Features/>
       <About/>
       {/* <SpecialOffer/> */}
