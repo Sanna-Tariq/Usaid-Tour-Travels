@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
 /*
 Theme Name:     Adventurist
-Theme URI:      
-Author:         
-Author URI:     
-Description:    
+Theme URI:
+Author:
+Author URI:
+Description:
 Version:        1.0
-License:        
-License URI:    
+License:
+License URI:
 
 
 	Navigation Files
@@ -2550,3 +2550,11 @@ textarea {
 }
 
 /* ====== 10.1. Coming Soon/404 section ====== */
+footer a{
+    color: #C0C0C0 ;
+    padding-left: 0 !important;
+    font-weight: normal;
+}
+footer a:hover{
+    color: #FB8E26 ;
+}

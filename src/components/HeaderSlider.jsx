@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import slide1 from '../assets/images/usaid/slider/1.png';
 import slide2 from '../assets/images/usaid/slider/2.png';
 import slide3 from '../assets/images//usaid/slider/4.png';
+<<<<<<< HEAD
 
 const HeaderSlider = () => {
   const slides = [slide1, slide2, slide3];
@@ -31,6 +32,8 @@ import React, { useState, useEffect } from 'react';
 import slide1 from '../assets/images/index/header-slider1.webp';
 import slide2 from '../assets/images/index/header-slider2.webp';
 import slide3 from '../assets/images/index/header-slider3.webp';
+=======
+>>>>>>> 41a3005 (homepage)
 
 const HeaderSlider = () => {
   const slides = [slide1, slide2, slide3];
