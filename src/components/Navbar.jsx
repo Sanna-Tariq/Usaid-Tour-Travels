@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/usaid/logo.svg';
 import sidebarLogo from '../assets/images/sidebarLogo.png';
+import WeatherWidget from './WeatherWidget';
 
 const Navbar = () => {
   return (
@@ -21,17 +22,20 @@ const Navbar = () => {
               <li className="nav-item"><a className="nav-link" href="#">Destinations</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
 
+
             </ul>
 
             <div className="globalBtn">
               <ul>
                 <li>
-                  <a href="#">Book Now<span></span><span></span><span></span><span></span></a>
+                  <a href="#">Book Now</a>
                 </li>
+
               </ul>
             </div>
           </div>
         </div>
+<WeatherWidget/>
       </nav>
       <hr />
       <aside>

@@ -124,21 +124,21 @@ const Footer = () => {
           <div className="col-lg-4 col-md-4 col-sm-6">
             <div>
               <h4>Contact Info</h4>
-              <div className="address">
+              <div className="address text-start">
                 <div>
                   <i className="fa-solid fa-house"></i>
-                  <p>Head office: Chandilora Tangmarg Gulmarg Road kashmir</p>
+                  <p className="pl-0">Head office: Chandilora Tangmarg Gulmarg Road kashmir</p>
                 </div>
                 <div>
                   <i className="fa-solid fa-envelope"></i>
-                  <p>
+                  <p className="pl-0">
                     <a href="mailto: sales@usaidtourtravels.com"> sales@usaidtourtravels.com </a>
-                    <a href="mailto: reservations.usaidtourandtravels@outlook.com"> reservations.usaidtourandtravels@outlook.com </a>
+                    <a href="mailto: reservations.usaidtourandtravels@outlook.com" className='text-break '> reservations.usaidtourandtravels@outlook.com </a>
                   </p>
                 </div>
                 <div>
                   <i className="fa-solid fa-phone"></i>
-                  <p> <a href="tel:+919797741642">+919797741642</a>,
+                  <p className="pl-0"> <a href="tel:+919797741642">+919797741642</a>,
                   <a href="tel:+918082183734">+918082183734</a></p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Footer = () => {
                   <li>
                     <Link to="#">
                       Book Now
-                      <span></span><span></span><span></span><span></span>
+
                     </Link>
                   </li>
                 </ul>

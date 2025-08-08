@@ -154,7 +154,7 @@ export default function TourSection() {
   }, []);
 
   return (
-    <section id="tour">
+    <section id="tour" className="pt-0">
       <div className="container">
         <div data-aos="fade" data-aos-duration="2000">
           <h4>Tour Packages</h4>
