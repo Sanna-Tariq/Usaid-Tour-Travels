@@ -99,7 +99,7 @@ export default Footer;
 // src/components/Footer.jsx
 import React from 'react';
 import { Link } from 'react-router-dom'; // if using react-router
-import logo from '@/assets/images/usaid/white-logo.png'; // adjust based on your setup
+import logo from '@/assets/images/usaid/white-logo.svg'; // adjust based on your setup
 
 const Footer = () => {
   return (

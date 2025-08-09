@@ -57,23 +57,24 @@ const WeatherWidget = () => {
       });
   }, []);
 
-  if (loading) return <p className="text-light">Loading weather...</p>;
+  if (loading) return <p className="text-dark">Loading weather...</p>;
   if (!weather || weather.cod !== 200)
-    return <p className="text-light">Weather data not available.</p>;
+    return <p className="text-dark">Weather data not available.</p>;
 
   return (
+
     <div
-      className="p-1 bg-transparent shadow  rounded shadow-sm text-center d-inline-flex justify-content-center gap-3 align-items-center flex-md-nowrap flex-wrap" style={{backdropFilter:'blur(10px)'}}
+      className="px-3  shadow  rounded shadow-sm text-center d-inline-flex justify-content-center gap-3 align-items-center flex-md-nowrap flex-wrap" style={{backdropFilter:'blur(10px)', backgroundColor:'#ffffff66'}}
 
     >
-      <h6 className=" fs-6">{weather.name}</h6>
+      <h6 className="text-dark fs-6">{weather.name}</h6>
       <img
         src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
         alt={weather.weather[0].description}
         style={{ width: "30px", height: "30px" }}
       />
-      <h4 className="mb-0 fs-6">{Math.round(weather.main.temp)}°C</h4>
-      <small className="text-white text-nowrap text-capitalize">
+      <h4 className="mb-0 fs-6 text-dark">{Math.round(weather.main.temp)}°C</h4>
+      <small className=" text-nowrap text-capitalize text-dark">
         {weather.weather[0].description}
       </small>
     </div>
