@@ -14,6 +14,7 @@ const Navbar = () => {
           <a className="navbar-brand p-0" href="/">
             <img src={logo} alt="logo" />
           </a>
+
   {/* Weather Widget on desktop */}
           <div className="d-block d-lg-none ms-3">
             <WeatherWidget />
@@ -51,11 +52,11 @@ const Navbar = () => {
                 <a className="nav-link" href="#">Contact</a>
               </li>
               <li>
-                <div className="globalBtn">
+                <div className="globalBtnActive">
                   <ul>
                     <li>
 
-                  <a href="#" >Book Now</a>
+                  <a href="https://www.jammukashmircablecar.com/" target="_blank" >Book Gondola <span></span><span></span><span></span><span></span></a>
                     </li>
                   </ul>
                 </div>
