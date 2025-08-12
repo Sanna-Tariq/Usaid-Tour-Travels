@@ -105,10 +105,14 @@ const Footer = () => {
   return (
 
     <footer>
+      <div className="d-flex flex-column justify-content-center gap-2 position-fixed align-items-center " style={{ right: '10px',bottom:'20px', zIndex:'999'}}>
+        <a href="https://api.whatsapp.com/send/?phone=%2B919797741642&text&type=phone_number&app_absent=0" className='bg-success p-3 rounded-circle d-flex align-items-center' target="_blank"><span className="fab fa-whatsapp fs-4 text-white"></span></a>
+        <a href="tel:+918082183734" className='bg-primary p-3 rounded-circle d-flex align-items-center '><span className="fa fa-phone text-white"></span></a>
+      </div>
       <div className="container">
         <div className="row justify-content-between">
           {/* Quick Links */}
-          <div className="col-lg-2 col-md-3 col-sm-6">
+          <div className="col-lg-2 col-md-3 col-sm-6 d-md-block d-none">
             <div>
               <h4>Quick Links</h4>
               <div className="footer-links d-flex flex-column">
