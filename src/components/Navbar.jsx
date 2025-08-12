@@ -51,7 +51,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#">Contact</a>
               </li>
-              <li>
+              {/* <li>
                 <div className="globalBtnActive">
                   <ul>
                     <li>
@@ -60,7 +60,7 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
 

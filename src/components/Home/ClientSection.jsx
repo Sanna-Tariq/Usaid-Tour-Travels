@@ -8,6 +8,8 @@ import logo2 from "@/assets/images/usaid/client/grand-mumtaz.png";
 import logo3 from "@/assets/images/usaid/client/khyber.png";
 import logo4 from "@/assets/images/usaid/client/rosewood.png";
 import logo5 from "@/assets/images/usaid/client/vintage.png";
+import logo6 from "@/assets/images/usaid/client/taj.png";
+import logo7 from "@/assets/images/usaid/client/radisson.png";
 
 const LogoipsumSlider = () => {
     const settings = {
@@ -27,7 +29,7 @@ const LogoipsumSlider = () => {
     ],
   };
 
-  const logos = [logo1, logo2, logo3, logo4, logo5];
+  const logos = [logo1, logo2, logo3, logo4, logo5,logo6, logo7];
 
   return (
         <div id="clients">
