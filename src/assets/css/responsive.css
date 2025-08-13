@@ -721,6 +721,9 @@
 @media all and (max-width: 767px) {
 
     /* ======== index.html ======== */
+    .navbar-brand img{
+        height:65px;
+    }
     .header-slider {
         height: 615px;
     }

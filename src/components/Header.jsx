@@ -10,7 +10,7 @@ const Header = () => {
     <div className="overlay">
       <div className="header-content">
         <Navbar />
-        <HeroSection />
+                        <HeroSection />
       </div>
     </div></>
   );

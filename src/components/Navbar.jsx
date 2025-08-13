@@ -12,13 +12,13 @@ const Navbar = () => {
 
           {/* Logo */}
           <a className="navbar-brand p-0" href="/">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="h-75"/>
           </a>
 
   {/* Weather Widget on desktop */}
-          <div className="d-block d-lg-none ms-3">
+          {/* <div className="d-block d-lg-none ms-3">
             <WeatherWidget />
-          </div>
+          </div> */}
 
           {/* Mobile Toggler */}
           <button
@@ -51,7 +51,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#">Contact</a>
               </li>
-              {/* <li>
+              <li>
                 <div className="globalBtnActive">
                   <ul>
                     <li>
@@ -60,14 +60,14 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-              </li> */}
+              </li>
             </ul>
           </div>
 
           {/* Weather Widget on desktop */}
-          <div className="d-none d-lg-block ms-3">
+          {/* <div className="d-none d-lg-block ms-3 ">
             <WeatherWidget />
-          </div>
+          </div> */}
         </div>
       </nav>
 

@@ -2,12 +2,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // if using react-router
 import logo from '@/assets/images/usaid/white-logo.svg'; // adjust based on your setup
+import WeatherWidget from '../components/WeatherWidget';
 
 const Footer = () => {
   return (
 
     <footer>
       <div className="d-flex flex-column justify-content-center gap-2 position-fixed align-items-center " style={{ right: '10px',bottom:'20px', zIndex:'999'}}>
+        <WeatherWidget/>
         <a href="https://api.whatsapp.com/send/?phone=%2B919797741642&text&type=phone_number&app_absent=0" className='bg-success p-3 rounded-circle d-flex align-items-center' target="_blank"><span className="fab fa-whatsapp fs-4 text-white"></span></a>
         <a href="tel:+918082183734" className='bg-primary p-3 rounded-circle d-flex align-items-center '><span className="fa fa-phone text-white"></span></a>
       </div>
@@ -26,30 +28,42 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="col-lg-4 col-md-4 col-sm-6">
-            <div>
-              <h4>Contact Info</h4>
-              <div className="address text-start">
-                <div>
-                  <i className="fa-solid fa-house"></i>
-                  <p className="pl-0">Head office: Chandilora Tangmarg Gulmarg Road kashmir</p>
-                </div>
-                <div>
-                  <i className="fa-solid fa-envelope"></i>
-                  <p className="pl-0">
-                    <a href="mailto: sales@usaidtourtravels.com"> sales@usaidtourtravels.com </a>
-                    <a href="mailto: reservations.usaidtourandtravels@outlook.com" className='text-break '> reservations.usaidtourandtravels@outlook.com </a>
-                  </p>
-                </div>
-                <div>
-                  <i className="fa-solid fa-phone"></i>
-                  <p className="pl-0"> <a href="tel:+919797741642">+919797741642</a>,
-                  <a href="tel:+918082183734">+918082183734</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
+    {/* Contact Info */}
+<div className="col-lg-4 col-md-4 col-sm-6">
+  <div>
+    <h4>Contact Info</h4>
+    <div className="address text-start">
+      <div>
+        <i className="fa-solid fa-house"></i>
+        <p className="pl-0">Head office: Chandilora Tangmarg Gulmarg Road kashmir</p>
+      </div>
+      <div>
+        <i className="fa-solid fa-envelope"></i>
+        <p className="pl-0">
+          <a href="mailto: sales@usaidtourtravels.com"> sales@usaidtourtravels.com </a>
+          <a href="mailto: reservations.usaidtourandtravels@outlook.com" className='text-break'> reservations.usaidtourandtravels@outlook.com </a>
+        </p>
+      </div>
+      <div>
+        <i className="fa-solid fa-phone"></i>
+        <p className="pl-0 ">
+          <a href="tel:+919797741642" className='pe-2'>+91 9797741642,</a> 
+          <a href="tel:+918082183734">+91 8082183734</a>
+        </p>
+      </div>
+    </div>
+
+    {/* CEO Info */}
+    <div className="mt-3">
+      <div className="d-flex align-items-center text-light mb-2 ms-5" style={{ fontSize: '0.9rem' }}>
+        <i className="fa-solid fa-user-tie me-2 text-primary"></i>
+        <span className="fst-italic">Resh Younis  </span> 
+      </div>
+        <span className="fst-italic text-white ms-5"> — CEO, Usaid Tour & Travels</span>
+    </div>
+  </div>
+</div>
+
 
           {/* Reservation Section */}
           <div className="col-md-4">
